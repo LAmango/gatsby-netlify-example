@@ -6,5 +6,8 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ["gatsby-plugin-eslint"],
+  siteMetadata: {
+    title: `My Title`,
+  },
+  plugins: ["gatsby-plugin-eslint", "gatsby-plugin-netlify-cms"],
 }
