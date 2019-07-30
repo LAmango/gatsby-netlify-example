@@ -16,10 +16,11 @@ collections:
       - { name: body, label: Body, widget: markdown }
   - name: home
     label: Home
-    folder: Home
+    folder: pages
     create: true
-    slug: "{{slug}}"
+    slug: "{{page}}"
     fields:
+      - { name: "home", label: "Page", widget: "hidden"}
       - { name: "title", label: "Title", widget: "string"}
       - { name: "homeImage", label: "Main Image", widget: "image"}
       - { name: "subHeading", label: "Subheadding", widget: "string"}
