@@ -19,7 +19,7 @@ collections:
     folder: cms
     create: true
     fields:
-      - { name: "path", label: "Path", widget: "hidden", default: "cms/home.md" }
+      - { name: "path", label: "Path", default: "cms/home.md" }
       - { name: "home", label: "Page", widget: "hidden"}
       - { name: "title", label: "Title", widget: "string"}
       - { name: "homeImage", label: "Main Image", widget: "image"}
