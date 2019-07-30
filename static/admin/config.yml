@@ -14,12 +14,12 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
-  - name: home
-    label: Home
-    folder: pages
+  - name: cms
+    label: cms
+    folder: cms
     create: true
-    slug: "{{page}}"
     fields:
+      - { name: "path", label: "Path", widget: "hidden", default: "home.md" }
       - { name: "home", label: "Page", widget: "hidden"}
       - { name: "title", label: "Title", widget: "string"}
       - { name: "homeImage", label: "Main Image", widget: "image"}
