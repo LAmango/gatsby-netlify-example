@@ -10,6 +10,7 @@ module.exports = {
     title: `My Title`,
   },
   plugins: [
+    "gatsby-plugin-sass",
     "gatsby-plugin-eslint",
     "gatsby-plugin-netlify-cms",
     {

@@ -1,0 +1,55 @@
+@import "styles-guide";
+
+.header {
+  height: 100px;
+  width: 80%;
+  background: white;
+  display: flex;
+  place-content: center;
+  margin: auto;
+}
+
+.buffer {
+  flex-grow: 1;
+}
+
+.logo {
+  margin: 20px;
+}
+
+/* Nav bar, when you hover
+ * over underline slide into view*/
+.navBar {
+  display: flex;
+  margin: auto;
+}
+
+.nav {
+  list-style: none;
+  position: relative;
+  margin: 20px;
+  color: $blue;
+  font-weight: 700;
+  align-items: center;
+  transition: color 0.5s;
+  &:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: $green;
+    transition: width 150ms;
+  }
+  &:hover {
+    color: $green;
+    cursor: pointer;
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 3px;
+      width: 100%;
+      background: $green;
+    }
+  }
+}

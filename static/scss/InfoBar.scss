@@ -1,0 +1,25 @@
+@import "styles-guide";
+
+.infoBar {
+    height: 50px;
+    width: 100%;
+    background: $blue;
+    display: flex;
+    place-content: center;
+}
+
+.links {
+    display: flex;
+}
+
+.link {
+    list-style: none;
+    padding: 15px;
+    color: white;
+    align-items: center;
+}
+
+.icon {
+    font-size: 15px !important;
+    padding: 0 5px;
+}

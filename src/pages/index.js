@@ -1,13 +1,17 @@
 import { Divider, Paper } from "@material-ui/core"
 import { graphql } from "gatsby"
 import React from "react"
+import InfoBar from "../components/InfoBar"
+import Header from "../components/Header"
+import("./index.scss")
 
 import PropTypes from "prop-types"
 
 const Index = ({ data }) => (
-  <div>
-    Hello world! Nice to meet you!
-    <h1>{data.site.siteMetadata.title}</h1>
+  <>
+    <InfoBar />
+    <Header />
+    <h1 className="title">{data.site.siteMetadata.title}</h1>
     {data.allMarkdownRemark.edges.map(post => (
       <div key={post.node.id}>
         <Divider />
@@ -17,7 +21,7 @@ const Index = ({ data }) => (
         </Paper>
       </div>
     ))}
-  </div>
+  </>
 )
 Index.propTypes = {
   data: PropTypes.object.isRequired,
