@@ -1,7 +1,7 @@
 ---
 path: cms/home.md
-title: Fulcrum Design and Marketing
-homeImage: /assets/design.png
-subHeading: We Design With You in Mind
+title: Community Health Partners
+homeImage: /assets/doctors.png
+subHeading: Making HealthCare services available to all!
 ---
 
