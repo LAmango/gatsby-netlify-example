@@ -1,11 +1,11 @@
-import { Divider, Paper } from "@material-ui/core"
-import { graphql } from "gatsby"
-import React from "react"
-import InfoBar from "../components/InfoBar"
-import Header from "../components/Header"
-import("./index.scss")
+import { Divider, Paper } from "@material-ui/core";
+import { graphql } from "gatsby";
+import React from "react";
+import InfoBar from "../components/InfoBar";
+import Header from "../components/Header";
+import("../../static/scss/index.scss");
 
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
 const Index = ({ data }) => (
   <>
@@ -22,10 +22,10 @@ const Index = ({ data }) => (
       </div>
     ))}
   </>
-)
+);
 Index.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
 export const query = graphql`
   query {
@@ -48,6 +48,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default Index
+export default Index;
